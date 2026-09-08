@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Segurança do Trabalho | Produtos Químicos</title>
+<style>
+:root{--navy:#102a43;--teal:#087f8c;--aqua:#dff6f7;--gold:#f4b942;--ink:#243b53;--muted:#627d98;--white:#fff;--bg:#f5f8fb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+nav{position:sticky;top:0;z-index:20;background:#ffffffee;backdrop-filter:blur(12px);border-bottom:1px solid #d9e2ec;display:flex;justify-content:center;gap:8px;padding:12px 16px}
+nav a{color:var(--navy);text-decoration:none;font-weight:700;padding:8px 12px;border-radius:20px;transition:.25s}
+nav a:hover{background:var(--aqua);color:var(--teal)}
+.hero{min-height:78vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#102a43 0%,#087f8c 100%);color:white;padding:70px 8%}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:#ffffff12;animation:float 7s ease-in-out infinite}
+.hero:before{width:380px;height:380px;right:-100px;top:-100px}
+.hero:after{width:220px;height:220px;left:-80px;bottom:-80px;animation-delay:1s}
+.hero-content{max-width:850px;position:relative;z-index:2}
+.badge{display:inline-block;background:#ffffff1c;border:1px solid #ffffff44;padding:8px 14px;border-radius:30px;margin-bottom:18px;font-weight:700}
+.hero h1{font-size:clamp(2.5rem,6vw,5rem);line-height:1.02;margin-bottom:18px}
+.hero h1 span{color:#ffe09a}
+.hero p{font-size:1.15rem;max-width:700px;color:#e6f7f8}
+.btn{display:inline-block;margin-top:28px;background:var(--gold);color:#172b3a;text-decoration:none;font-weight:800;padding:14px 22px;border-radius:12px;box-shadow:0 8px 25px #0003;transition:.25s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 12px 30px #0004}
+main{max-width:1100px;margin:auto;padding:55px 20px}
+section{background:white;border-radius:22px;padding:34px;margin-bottom:26px;box-shadow:0 8px 28px #102a4310;border:1px solid #e6edf3;animation:rise .7s ease both}
+h2{font-size:2rem;color:var(--navy);margin-bottom:10px}
+.section-intro{color:var(--muted);margin-bottom:20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:17px}
+.card{background:#f7fafc;border:1px solid #e6edf3;border-radius:16px;padding:22px;transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 25px #102a4314}
+.icon{font-size:2rem;margin-bottom:8px}
+.card h3{color:var(--teal);margin-bottom:7px}
+ul{padding-left:22px}
+li{margin:9px 0}
+.alert{margin-top:20px;padding:18px;border-radius:14px;background:#fff7df;border-left:5px solid var(--gold)}
+.danger{background:#fff0ef;border-left-color:#d64545}
+.team{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.person{background:var(--aqua);padding:10px 14px;border-radius:30px;font-weight:700;color:var(--navy)}
+.sources a{color:var(--teal);font-weight:700}
+footer{background:var(--navy);color:white;text-align:center;padding:35px 20px}
+.small{font-size:.9rem;color:#d9e2ec}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s}
+.reveal.show{opacity:1;transform:none}
+@keyframes float{50%{transform:translateY(25px) rotate(8deg)}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(max-width:650px){nav{overflow-x:auto;justify-content:flex-start}.hero{min-height:70vh;padding:55px 22px}section{padding:24px}.hero h1{font-size:2.7rem}}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="#inicio">Início</a>
+<a href="#riscos">Riscos</a>
+<a href="#prevencao">Prevenção</a>
+<a href="#epis">EPIs</a>
+<a href="#emergencia">Emergência</a>
+<a href="#fontes">Fontes</a>
+</nav>
+
+<header class="hero" id="inicio">
+<div class="hero-content">
+<div class="badge">🏫 Turma 108 • Segurança do Trabalho</div>
+<h1>Segurança com <span>Produtos Químicos</span></h1>
+<p>Conhecimento, prevenção e responsabilidade para tornar o ambiente de trabalho mais seguro.</p>
+<a class="btn" href="#riscos">Explorar o conteúdo ↓</a>
+</div>
+</header>
+
+<main>
+<section id="riscos" class="reveal">
+<h2>⚠️ Conheça os riscos</h2>
+<p class="section-intro">Produtos químicos podem apresentar diferentes perigos. Reconhecer esses riscos é o primeiro passo para preveni-los.</p>
+<div class="cards">
+<div class="card"><div class="icon">🫁</div><h3>Inalação</h3><p>Gases, vapores, poeiras e aerossóis podem afetar o sistema respiratório.</p></div>
+<div class="card"><div class="icon">🧤</div><h3>Contato</h3><p>Algumas substâncias podem irritar ou causar danos à pele e aos olhos.</p></div>
+<div class="card"><div class="icon">🔥</div><h3>Incêndio</h3><p>Produtos inflamáveis exigem armazenamento e manuseio adequados.</p></div>
+</div>
+</section>
+
+<section id="prevencao" class="reveal">
+<h2>🛡️ Prevenção</h2>
+<p class="section-intro">Boas práticas ajudam a reduzir a exposição e evitar acidentes.</p>
+<ul>
+<li>Leia os rótulos e as informações de segurança antes de utilizar o produto.</li>
+<li>Mantenha os produtos identificados e armazenados corretamente.</li>
+<li>Não misture produtos sem orientação adequada.</li>
+<li>Utilize ventilação e medidas de controle indicadas para a atividade.</li>
+<li>Siga os procedimentos de segurança do local de trabalho.</li>
+<li>Comunique imediatamente vazamentos, acidentes ou condições inseguras.</li>
+</ul>
+<div class="alert"><strong>💡 Dica:</strong> a NR-26 prevê que trabalhadores recebam informações e treinamento sobre rotulagem, fichas de dados de segurança, perigos, riscos, prevenção e procedimentos de emergência.</div>
+</section>
+
+<section id="epis" class="reveal">
+<h2>🥽 Equipamentos de Proteção Individual</h2>
+<p class="section-intro">O equipamento adequado depende do produto, da atividade e da avaliação de risco.</p>
+<div class="cards">
+<div class="card"><div class="icon">🧤</div><h3>Luvas</h3><p>Devem ser compatíveis com a substância e com a atividade realizada.</p></div>
+<div class="card"><div class="icon">🥽</div><h3>Óculos</h3><p>Ajudam a proteger os olhos contra respingos e partículas.</p></div>
+<div class="card"><div class="icon">😷</div><h3>Proteção respiratória</h3><p>Quando indicada, deve seguir a avaliação de risco e o procedimento de segurança.</p></div>
+<div class="card"><div class="icon">🥼</div><h3>Vestimentas</h3><p>Aventais e roupas adequadas podem reduzir o contato da pele com agentes químicos.</p></div>
+</div>
+</section>
+
+<section id="emergencia" class="reveal">
+<h2>🚨 Em caso de emergência</h2>
+<ul>
+<li>Interrompa a atividade se isso puder ser feito com segurança.</li>
+<li>Afaste-se da área de perigo e siga o plano de emergência do local.</li>
+<li>Avise o responsável pela segurança ou pela área.</li>
+<li>Consulte as instruções específicas da ficha de dados de segurança do produto.</li>
+<li>Procure atendimento profissional quando houver exposição ou acidente.</li>
+</ul>
+<div class="alert danger"><strong>⚠️ Não improvise:</strong> em um acidente químico, siga o procedimento de emergência e as orientações profissionais.</div>
+</section>
+
+<section class="reveal">
+<h2>👥 Integrantes</h2>
+<p class="section-intro"><strong>Turma 108 — Segurança do Trabalho</strong></p>
+<div class="team">
+<div class="person">Ana Luiza Bahmed</div>
+<div class="person">Sofia Gonçalves</div>
+<div class="person">Emanuelle Rodrigues</div>
+<div class="person">Gabriel de Castro</div>
+<div class="person">João Pedro Catarino</div>
+</div>
+</section>
+
+<section id="fontes" class="sources reveal">
+<h2>📚 Fontes de pesquisa</h2>
+<p class="section-intro">Fontes oficiais utilizadas para a elaboração do conteúdo:</p>
+<ul>
+<li><a href="https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-paritaria-permanente/arquivos/normas-regulamentadoras/nr-26-atualizada-2022.pdf" target="_blank">Ministério do Trabalho e Emprego — NR-26: Sinalização de Segurança</a></li>
+<li><a href="https://www.gov.br/fundacentro/pt-br/centrais-de-conteudo/pesquisa-intervencao/riscos-quimicos-biologicos-fisicos-e-tecnologias-emergentes" target="_blank">Fundacentro — Riscos químicos, biológicos, físicos e tecnologias emergentes</a></li>
+<li><a href="https://www.gov.br/fundacentro/pt-br/centrais-de-conteudo/pesquisa-intervencao/avaliacao-de-riscos-quimicos-em-laboratorios" target="_blank">Fundacentro — Avaliação de riscos químicos em laboratórios</a></li>
+<li><a href="https://www.gov.br/fundacentro/pt-br/comunicacao/noticias/noticias/2024/novembro/manual-sistematiza-metodos-e-ferramentas-para-avaliacao-e-controle-de-exposicao-a-produtos-quimicos-em-laboratorios-de-pesquisa-e-ensino/" target="_blank">Fundacentro — Manual sobre avaliação qualitativa de riscos químicos</a></li>
+</ul>
+</section>
+</main>
+
+<footer>
+<h3>🧪 Segurança começa com informação.</h3>
+<p class="small">Projeto escolar • Turma 108 — Segurança do Trabalho</p>
+</footer>
+
+<script>
+const items=document.querySelectorAll('.reveal');
+const observer=new IntersectionObserver((entries)=>{
+entries.forEach(entry=>{if(entry.isIntersecting) entry.target.classList.add('show')})
+},{threshold:.12});
+items.forEach(item=>observer.observe(item));
+</script>
+</body>
+</html>
